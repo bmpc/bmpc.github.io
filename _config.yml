@@ -21,7 +21,7 @@
 title: Yet Another Pebble
 email: brunompconde(at)gmail(dot)com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a Software Engineer and Product Manager of [Xray](https://www.getxray.app/) at Xpand IT. Before, I worked at [Morphis Tech](https://morphis-tech.com/) creating language parsers, static analysers, tools and IDEs.
+  I'm a Software Engineer and Product Manager of <a href="https://www.getxray.app/" target="_blank">Xray</a> at Xpand IT. Before, I worked at [Morphis Tech](https://morphis-tech.com/) creating language parsers, static analysers, tools and IDEs.
 baseurl: "" # the subpath of your site, e.g. /blog
 # Disqus Comments
 disqus:
