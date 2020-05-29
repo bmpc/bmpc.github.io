@@ -6,7 +6,7 @@ permalink: /about/
 
 Hello and welcome to my blog. My name is Bruno Conde. I'm a Software Engineer and Product Manager at [Xpand IT](https://www.xpand-it.com/). Worked on the Genesis of [Xray](https://www.getxray.app/), a Test Management tool for Jira, for both the cloud and on-permise versions.
 
-Before that, I worked at [Morphis Software](https://morphis-tech.com/) creating language parsers, static analysers, migraton tools and IDEs.
+Before that, I worked at [Morphis Tech](https://morphis-tech.com/) creating language parsers, static analysers, migraton tools and IDEs.
 
 A long, long time ago, I participated in the [Imagine Cup](https://imaginecup.microsoft.com/) world-wide finals with a project called XSMobile to summarize web pages for hand-held devices such as PDAs.
 
