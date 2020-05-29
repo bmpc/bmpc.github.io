@@ -21,7 +21,7 @@
 title: Yet Another Pebble
 email: brunompconde(at)gmail(dot)com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a Software Engineer and Product Manager of <a href="https://www.getxray.app/" target="_blank">Xray</a> at of <a href="https://www.xpand-it.com/" target="_blank">Xpand IT</a>. Before, I worked at <a href="https://morphis-tech.com/" target="_blank">Morphis Tech</a> creating language parsers, static analysers, tools and IDEs.
+  I'm a Software Engineer and Product Manager of <a href="https://www.getxray.app/" target="_blank">Xray</a> at <a href="https://www.xpand-it.com/" target="_blank">Xpand IT</a>. Before, I worked at <a href="https://morphis-tech.com/" target="_blank">Morphis Tech</a> creating language parsers, static analysers, tools and IDEs.
 baseurl: "" # the subpath of your site, e.g. /blog
 # Disqus Comments
 disqus:
@@ -31,7 +31,8 @@ disqus:
 
 url: "https://bmpc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: brunoconde
-github_username:  bmpc
+github_username: bmpc
+stackoverflow_username: bruno-conde
 
 # Build settings
 # theme: minima
