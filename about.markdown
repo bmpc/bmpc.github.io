@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hello and welcome to my blog. My name is Bruno Conde. I'm a Software Engineer and Product Manager at [Xpand IT](https://www.xpand-it.com/). Worked on the Genesis of [Xray](https://www.getxray.app/), a Test Management tool for Jira, for both the cloud and on-permise versions.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Before that, I worked at [Morphis Software](https://morphis-tech.com/) creating language parsers, static analysers, migraton tools and IDEs.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+A long, long time ago, I participated in the [Imagine Cup](https://imaginecup.microsoft.com/) world-wide finals with a project called XSMobile to summarize web pages for hand-held devices such as PDAs.
 
+I created this blog to share some projects and war stories, hoping these might help somewone.
 
-[jekyll-organization]: https://github.com/jekyll
+The name for this blog was inspired in my favorite quote:
+
+*I do not know what I may appear to the world, but to myself I seem to have been only like a boy playing on the seashore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth lay all undiscovered before me.* - Sir Isaac Newton
