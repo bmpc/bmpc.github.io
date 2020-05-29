@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Reverse engineering a home alarm console"
-date:   2020-05-24 19:18:20 +0100
+date:   2020-05-30 0:00:00 +0100
 labels: reverse-engineering home-automation esp8266
+comments: true
 ---
 
 It all started when I moved into a new house. There was an alarm system from Paradox installed named [MG6250](https://www.paradox.com/Products/default.asp?PID=2) (**MAGELLAN 2-Partition 64-Zone Wireless Console with GPRS/GSM**).
