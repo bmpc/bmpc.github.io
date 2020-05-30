@@ -22,10 +22,10 @@ As a software engineer and a very curious guy, I started thinking of an alternat
 
 My first thought was: what if I could use an Arduino (or a similar device) to detect when the electric signal is sent to the alarm bell, and send an HTTP request somewhere so that I can get notified on my phone?
 
-I started googling and come across with the **ESP8266 NodeMCU v3** almost immediately:
+I started googling and come across with the **ESP8266 NodeMCU** almost immediately:
 
 <div style="text-align:center">
-  <img src="/post_assets/1/nodeMCU.jpg" alt="ESP8266 NodeMCU v3" width="60%" />
+  <img src="/post_assets/1/nodeMCU.jpg" alt="ESP8266 NodeMCU" width="60%" />
 </div>
 
 This is just like an Arduino, but with a WIFI chip included, much smaller, and only $6. Using the ESP8266 and the voltage sensor below, I should be able to do get somewhere…
