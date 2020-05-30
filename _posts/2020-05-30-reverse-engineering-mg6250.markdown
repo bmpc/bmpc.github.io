@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Reverse engineering a home alarm console"
-date:   2020-05-30 0:00:00 +0100
-labels: reverse-engineering home-automation esp8266 paradox MG6250
+date:   2020-05-30 8:00:00 +0100
+tags: reverse-engineering home-automation esp8266 paradox MG6250
 comments: true
 ---
 
