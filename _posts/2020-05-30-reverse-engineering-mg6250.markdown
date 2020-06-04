@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "Reverse engineering a home alarm console"
+descrition: "Reverse engineering the Paradox MG6250 home alarm console using the serial port by listening to messages and sending relevant events to Home Assistant through an ESP8266 nodeMCU v3 board with MQTT."
 date:   2020-05-30 8:00:00 +0100
+image: /post_assets/1/project1.jpeg
 tags: reverse-engineering home-automation esp8266 paradox MG6250
 comments: true
 ---
