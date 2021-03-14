@@ -145,7 +145,7 @@ This can easily be tested just by calling the following commands from Basic:
 
 After this, I created a small Z80 assembly program to continuously receive bytes from IN commands without any issue. This was proud that the WAIT lined was doing its job.
 
-<div style="text-align:center;margin-bottom:20px">
+<div style="text-align:center;margin-bottom:40px">
   <img src="/post_assets/2/circuit1.jpeg" alt="breadboard circuit" width="80%" />
 </div>
 
@@ -181,7 +181,7 @@ Most games nowadays are compacted into ".DSK" files, a disk image format. I extr
   <img src="/post_assets/2/cpc_dir.jpeg" alt="dir cmd" width="80%" />
 </div>
 
-<div style="text-align:center;margin-bottom:20px">
+<div style="text-align:center;margin-bottom:40px">
   <img src="/post_assets/2/cpc_copy.jpeg" alt="copy cmd" width="80%" />
 </div>
 
