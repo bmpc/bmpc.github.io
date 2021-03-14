@@ -10,7 +10,7 @@ Before that, I worked at [Morphis Tech](https://morphis-tech.com/) creating lang
 
 A long, long time ago, I participated in the [Imagine Cup](https://imaginecup.microsoft.com/) world-wide finals with a project called XSMobile to summarize web pages for hand-held devices such as PDAs.
 
-I created this blog to share some projects and war stories, hoping these might help somewone.
+I created this blog to share some projects and war stories, hoping these might help someone.
 
 The name for this blog was inspired in my favorite quote:
 
