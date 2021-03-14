@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Interfacing with the Amstrad CPC 6128 using a Microcontroller"
-descrition: "Connecting the Amstrad CPC 6128 expansion port to a Microcontroller (Arduino Mega) and copying information from a micro SD card."
+title:  "Interfacing with the Amstrad CPC 6128 using a microcontroller"
+descrition: "Connecting the Amstrad CPC 6128 expansion port to a microcontroller (Arduino Mega) and copying information from a micro SD card."
 date:   2021-03-14 8:00:00 +0100
 image: /post_assets/2/circuit1.jpeg
 tags: Z80 amstrad cpc6128 arduino retrocomputer
@@ -38,7 +38,7 @@ Provided with this information, I started connecting all the relevant lines from
 Here is the expansion port pin layout. 
 
 <div style="text-align:center">
-  <img src="/post_assets/2/CPCExpansionPort.png" alt="CPC Expansion Port" width="30%" />
+  <img src="/post_assets/2/CPCExpansionPort.png" alt="CPC Expansion Port" width="60%" />
 </div>
 
     1  Sound     2  GND
@@ -145,9 +145,11 @@ This can easily be tested just by calling the following commands from Basic:
 
 After this, I created a small Z80 assembly program to continuously receive bytes from IN commands without any issue. This was proud that the WAIT lined was doing its job.
 
-<div style="text-align:center">
+<div style="text-align:center;margin-bottom:20px">
   <img src="/post_assets/2/circuit1.jpeg" alt="breadboard circuit" width="80%" />
 </div>
+
+
 
 
 ## Listing and copying files
@@ -179,10 +181,12 @@ Most games nowadays are compacted into ".DSK" files, a disk image format. I extr
   <img src="/post_assets/2/cpc_dir.jpeg" alt="dir cmd" width="80%" />
 </div>
 
-
-<div style="text-align:center">
+<div style="text-align:center;margin-bottom:20px">
   <img src="/post_assets/2/cpc_copy.jpeg" alt="copy cmd" width="80%" />
 </div>
+
+
+
 
 ## What's next?
 
