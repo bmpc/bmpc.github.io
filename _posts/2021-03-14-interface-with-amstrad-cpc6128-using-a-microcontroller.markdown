@@ -94,7 +94,7 @@ Below is the schematic for the circuit I used:
 Components:
  - 220Ω resistor x 3
  - 10kΩ resistor x 1
- - PNP transistor x 1
+ - NPN transistor x 1
  - 74HC21N x 1
  - 74HC27N x 1
  - Arduino Mega 2560 x 1
