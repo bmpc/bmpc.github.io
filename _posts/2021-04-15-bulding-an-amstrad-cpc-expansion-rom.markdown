@@ -17,8 +17,8 @@ I have discovered another excellent [article by KernelCrash](https://www.kernelc
 In order to understand how expansion ROMs work in the CPC 6128 in the first place, I set up to build an expansion ROM.
 
 Back in the 80's, it was common to have DIY expansion boards. These projects were often included in magazines, just like the ones below:
-[https://www.cpcwiki.eu/index.php/ACU_Romboard_(DIY)](https://www.cpcwiki.eu/index.php/ACU_Romboard_(DIY))
-[https://www.cpcwiki.eu/imgs/3/32/Amstrad_rom_expander.pdf](https://www.cpcwiki.eu/imgs/3/32/Amstrad_rom_expander.pdf)
+ - [https://www.cpcwiki.eu/index.php/ACU_Romboard_(DIY)](https://www.cpcwiki.eu/index.php/ACU_Romboard_(DIY))
+ - [https://www.cpcwiki.eu/imgs/3/32/Amstrad_rom_expander.pdf](https://www.cpcwiki.eu/imgs/3/32/Amstrad_rom_expander.pdf)
 
 I followed these projects to build a prototype using a breadboard and a couple of logic gates.
 
@@ -53,7 +53,7 @@ The **ROMEN** signal is connected directly to the **OE** (Output Enable) pin of 
 
 I quickly assembled the circuit in a breadboard using AND and NOR gates. I used the 74HC logic family chips since I had some lying around. I have also created the D-latch using discrete AND/NOR gates.
 
-For the initial test, I flashed an expansion test ROM with an RSX [GitHub Gist](https://gist.github.com/bmpc/9a66f5b7567079f6ee243594332bd158) into a 32K EEPROM (**AT28C25615U**) using my [**Arduino EEPROM programmer**](https://github.com/bmpc/arduino_eeprom_programmer). 
+For the initial test, I flashed an expansion test ROM with an RSX ([GitHub Gist](https://gist.github.com/bmpc/9a66f5b7567079f6ee243594332bd158)) into a 32K EEPROM (**AT28C25615U**) using my [**Arduino EEPROM programmer**](https://github.com/bmpc/arduino_eeprom_programmer). 
 
 When I first plugged in the circuit to the CPC expansion port, the CPC would freeze or restarted. The EEPROM was not even plugged into the breadboard yet. I could also see that the circuit was very unstable. Something was definitely not working correctly.
 
