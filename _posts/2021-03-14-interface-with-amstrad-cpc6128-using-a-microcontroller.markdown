@@ -17,7 +17,7 @@ Everything was working fine except the disk drive. I disassembled and cleaned th
 Everything ready, let's start! The first thing I did was to play some games stored on the (very old) 3.5" disks I had and to learn Basic 1.1 (Locomotive Basic 1.1).
 
 There's an extensive archive of games and programs free to download: [https://www.planetemu.net/roms/amstrad-cpc-games-dsk](https://www.planetemu.net/roms/amstrad-cpc-games-dsk). However, I did not have any way of copying these files into the CPC. 
-
+<!--more-->
 With this need, and the urge to learn more about these 8-bit computers, I started researching how to interact with the CPC and perhaps even upload games and programs using an SD card or directly from another computer.
 
 I almost immediately discovered the expansion port on the back of the CPC. This port provides direct access to the Z80 CPU and some other CPC functions. I reckon that using a microcontroller (like the Arduino) would be a good way to start exploring the signals from this port.

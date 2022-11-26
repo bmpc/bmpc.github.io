@@ -12,6 +12,8 @@ It all started when I moved into a new house. There was an alarm system from Par
 
 ![MAGELLAN 2-Partition 64-Zone Wireless Console with GPRS/GSM](/post_assets/1/mg6250.png)
 
+<!--more-->
+
 I soon found out that the **GPRS/GSM** part was not included in the system. After a quick search I found the part that I needed:
 
 <div style="text-align:center">
