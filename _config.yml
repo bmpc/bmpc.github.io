@@ -20,8 +20,9 @@
 
 title: Yet Another Pebble
 email: brunompconde(at)gmail(dot)com
-description: >- # this means to ignore newlines until "baseurl:"
-  I'm a Software Engineer and Product Manager of <a href="https://www.getxray.app/" target="_blank">Xray</a> at <a href="https://www.xpand-it.com/" target="_blank">Xpand IT</a>. Before, I worked at <a href="https://morphis-tech.com/" target="_blank">Morphis Tech</a> creating language parsers, static analysers, tools and IDEs.
+description: ""
+
+# >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 # Disqus Comments
 disqus:

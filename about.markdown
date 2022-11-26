@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hello and welcome to my blog. My name is Bruno Conde. I'm a Software Engineer and Product Manager at [Xpand IT](https://www.xpand-it.com/). I started [Xray](https://www.getxray.app/), a Test Management tool for Jira, in both cloud and on-premise variants. I was the Xray lead developer for many years. Nowadays, I manage the product.
+Hello and welcome to my blog. My name is Bruno Conde. I'm a Software Engineer, co-founder and manager at [Atlera](https://www.atlera.io/) and Product Manager of [Xray](https://www.getxray.app/), a Test Management tool for Jira. I was also the Xray lead developer for many years.
 
 Before that, I worked at [Morphis Tech](https://morphis-tech.com/) creating language parsers, static analysers, migraton tools and IDEs.
 
