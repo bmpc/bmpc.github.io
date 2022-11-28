@@ -5,7 +5,8 @@ descrition: "Connecting the Amstrad CPC 6128 expansion port to a microcontroller
 date:   2021-03-14 8:00:00 +0100
 image: /post_assets/2/circuit1.jpeg
 tags: Z80 amstrad cpc6128 arduino retrocomputer
-alias: /2021/03/14/interface-with-amstrad-cpc6128-using-a-microcontroller.html
+redirect_from: 
+  - /2021/03/14/interface-with-amstrad-cpc6128-using-a-microcontroller.html
 comments: true
 ---
 

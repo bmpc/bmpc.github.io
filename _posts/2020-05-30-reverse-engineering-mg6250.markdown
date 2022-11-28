@@ -5,7 +5,8 @@ descrition: "Reverse engineering the Paradox MG6250 home alarm console using the
 date:   2020-05-30 8:00:00 +0100
 image: /post_assets/1/project1.jpeg
 tags: reverse-engineering home-automation esp8266 paradox MG6250
-alias: /2020/05/30/reverse-engineering-mg6250.html
+redirect_from:
+  - /2020/05/30/reverse-engineering-mg6250.html
 comments: true
 ---
 

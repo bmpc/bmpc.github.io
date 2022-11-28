@@ -6,7 +6,6 @@ permalink: /:title/
 lang: "en"
 excerpt_separator: "<!--more-->"
 date_format: "%B %d, %Y"
-safe: false
 
 # Layout
 
@@ -35,3 +34,7 @@ comments:
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from

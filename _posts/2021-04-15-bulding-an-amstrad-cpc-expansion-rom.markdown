@@ -5,7 +5,8 @@ descrition: "Build an Amstrad CPC expansion ROM prototype using a breadboard and
 date:   2021-04-15 20:00:00 +0100
 image: /post_assets/3/circuit_preview.jpeg
 tags: Z80 amstrad cpc6128 ROM EEPROM retrocomputer
-alias: /2021/04/15/bulding-an-amstrad-cpc-expansion-rom.html
+redirect_from: 
+  - /2021/04/15/bulding-an-amstrad-cpc-expansion-rom.html
 comments: true
 ---
 
