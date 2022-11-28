@@ -6,6 +6,7 @@ permalink: /:title/
 lang: "en"
 excerpt_separator: "<!--more-->"
 date_format: "%B %d, %Y"
+safe: false
 
 # Layout
 
