@@ -128,6 +128,15 @@ If we put the ESP8266 in deep sleep mode, the current drops to about 50/ 60mA. S
 
 Hence, to reduce the quiescent current of the L293D ICs, the power is supplied to these ICs only when stations need to be activated/deactivated. To achieve this, a simple NPN transistor is used to turn off the shift register and both L293D ICs. This transistor is driven by the ESP8266.
 
+As the latching solenoid is expected to consume around 400mA, I've chosen a transistor that could handle up to 1A of current on the collector and was available on my local electronics store (the [SS8050CBU](https://eu.mouser.com/datasheet/2/308/1/SS8050_D-1814986.pdf)).
+
+In order to choose the correct base resistor value for the transistor, I've applied the following formula:
+
+    Base resistor = (Supply voltage – Voltage drop) / (Collector current / Beta)
+    Rb = (3.3-1.2)/(0.4/120) ~ 630 Ω
+
+However, I tried several resistor values but only a 100 Ω resistor worked and fully saturated the transsitor. Therefore, my calculation must not be correct... I've read somewhere that in order to use the transistor as a switch, we don't need to consider the `Beta` or `hFE`. 
+
 After these improvements, the current was still around 4mA. I know exactly where this current comes from - the LM7805 voltage regulator which the datasheet clearly states that its quiescent current is typically 4.2mA. I needed to find another way to efficiently step down the current from 9V to 5V. I considered DC-DC buck converters and Ultra-low quiescent current voltage regulators. An important aspect when choose an efficient voltage regulator was the max output current. We need at least 250 mA for the circuit and solenoids. I found many voltage regulators capable to do the job. However, after an exhaustive internet search, the only one that I found in stock was the [MCP1702](https://ww1.microchip.com/downloads/en/DeviceDoc/22008E.pdf).
 
 I ended up also replacing the WeMos D1 Mini Pro with an [ESP-12F WiFi module](https://docs.ai-thinker.com/_media/esp8266/docs/esp-12f_product_specification_en.pdf) in order to reduce the standby current even further used by the ESP8266. On deep sleep, the standby current of the ESP-12F is around ~20uA.
@@ -136,21 +145,31 @@ Because of this, another voltage regulator is needed to step down from 5V to the
 
 The resulting average standby of the circuit is now around **20uA**. :muscle: :clap:
 
+### RTC accuracy on the ESP8266 
+
+The max deep sleep time of the ESP-12F is around 3 to 4 hours. Therefore, we need to wake up evert 3 hours or so and get right back to sleep if no station needs to be started or stopped.
+
+Also, it turns out that the ESP8266 just doesn't have a very precise RTC (Real Time Clock). On a 3 hour period, the ESP8266 RTC would drift ahead around 14 minutes. Without a more precise clock, the only solution is to go back to sleep for the remaining time. 
+
+## Final PCB and Enclosure
+
 After the new pcbs arrived, I soldered all the parts and went for another try... Everything worked as expected and the battery is still holding up. :satisfied:
 
-Here are some photos of the final pcb:
+Here are some photos of the final pcb and the enclosure:
 
 <div style="text-align:center">
   <img src="../post_assets/4/circuit_3.png" alt="circuit_3" width="60%" />
 </div>
 
-<!--
-<div style="text-align:center">
-  <img src="../post_assets/4/circuit_3_enclosure.png" alt="circuit_3_enclosure" width="50%" />
+<div style="display:flex;gap: 20px;justify-content: center;">
+  <img src="../post_assets/4/sprinkler_controller_1.jpg" alt="sprinkler_controller_1" width="45%" />
+  <img src="../post_assets/4/sprinkler_controller_2.jpg" alt="sprinkler_controller_2" width="45%" />
 </div>
--->
 
-### Final circuit schematic
+</br>
+</br>
+
+## Circuit schematic
 
 <div style="text-align:center">
   <img src="../post_assets/4/circuit_schematic_3.png" alt="schematic_3" width="100%" />
