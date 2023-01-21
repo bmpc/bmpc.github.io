@@ -166,8 +166,7 @@ Here are some photos of the final pcb and the enclosure:
   <img src="../post_assets/4/sprinkler_controller_2.jpg" alt="sprinkler_controller_2" width="45%" />
 </div>
 
-</br>
-</br>
+&nbsp;
 
 ## Circuit schematic
 
