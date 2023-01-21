@@ -15,11 +15,11 @@ I'm a proud owner of an Amstrad CPC 6128 with a green monochrome monitor. I got 
 I've recently become interested in retrocomputing (mostly because of this guy [https://internalregister.github.io](https://internalregister.github.io/), so I decided to take the CPC 6128 out of the attic and give it another try.
 
 Everything was working fine except the disk drive. I disassembled and cleaned the whole computer. After this, I fixed the drive by adding a new rubber band (a very common problem with these drives as the original rubber band will break with time).
-
+<!--more-->
 Everything ready, let's start! The first thing I did was to play some games stored on the (very old) 3.5" disks I had and to learn Basic 1.1 (Locomotive Basic 1.1).
 
 There's an extensive archive of games and programs free to download: [https://www.planetemu.net/roms/amstrad-cpc-games-dsk](https://www.planetemu.net/roms/amstrad-cpc-games-dsk). However, I did not have any way of copying these files into the CPC. 
-<!--more-->
+
 With this need, and the urge to learn more about these 8-bit computers, I started researching how to interact with the CPC and perhaps even upload games and programs using an SD card or directly from another computer.
 
 I almost immediately discovered the expansion port on the back of the CPC. This port provides direct access to the Z80 CPU and some other CPC functions. I reckon that using a microcontroller (like the Arduino) would be a good way to start exploring the signals from this port.

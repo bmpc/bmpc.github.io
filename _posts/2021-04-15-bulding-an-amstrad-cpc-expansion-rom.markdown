@@ -15,7 +15,7 @@ I've recently started to play around with an Amstrad CPC 6128. I was able to int
 This project/experiment required some programs running on the CPC, and one of the main things left to do was to include these programs in a ROM so they could be accessible using RSX extensions.
 
 I have discovered another excellent [article by KernelCrash](https://www.kernelcrash.com/blog/amstrad-cpc-rom-emulation-using-an-stm32f4/2018/06/03/) that uses an STM32F4 to emulate a ROM. This is exactly what I'm looking for.
-
+<!--more-->
 In order to understand how expansion ROMs work in the CPC 6128 in the first place, I set up to build an expansion ROM.
 
 Back in the 80's, it was common to have DIY expansion boards. These projects were often included in magazines, just like the ones below:
@@ -23,7 +23,7 @@ Back in the 80's, it was common to have DIY expansion boards. These projects wer
  - [https://www.cpcwiki.eu/imgs/3/32/Amstrad_rom_expander.pdf](https://www.cpcwiki.eu/imgs/3/32/Amstrad_rom_expander.pdf)
 
 I followed these projects to build a prototype using a breadboard and a couple of logic gates.
-<!--more-->
+
 ## How it works
 
 Whenever the CPC wants to communicate with the Upper ROM, it will first write a byte with the selected Upper ROM bank number into port **$DF00**. There can be up to 252 expansion ROMS mapped over the top 16K of memory, starting at #C000.

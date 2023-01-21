@@ -10,11 +10,11 @@ redirect_from:
 comments: true
 ---
 
-It all started when I moved into a new house. There was an alarm system from Paradox installed named [MG6250](https://www.paradox.com/Products/default.asp?PID=2) (**MAGELLAN 2-Partition 64-Zone Wireless Console with GPRS/GSM**).
-
-![MAGELLAN 2-Partition 64-Zone Wireless Console with GPRS/GSM](/post_assets/1/mg6250.png)
+It all started when I moved into a new house. There was an alarm system from Paradox installed named [MG6250](https://www.paradox.com/Products/default.asp?PID=2).
 
 <!--more-->
+![MAGELLAN 2-Partition 64-Zone Wireless Console with GPRS/GSM](/post_assets/1/mg6250.png)
+**MAGELLAN 2-Partition 64-Zone Wireless Console with GPRS/GSM**
 
 I soon found out that the **GPRS/GSM** part was not included in the system. After a quick search I found the part that I needed:
 

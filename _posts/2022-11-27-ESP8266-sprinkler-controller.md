@@ -13,11 +13,11 @@ In this article, I'm going to describe how I created my own lawn irrigation cont
 My previous lawn irrigation system was a [Rainbird WP4](https://www.rainbird.com/). My main complaint with this system was that I could not control it remotely using a Web interface or my phone.
 
 My lawn irrigation has 3 stations. Each station has 3 to 4 sprinklers that are controlled by the Rainbird solenoids on the main central box. These solenois are activated/deactivated directly by the Rainbird WP4. This device does not support any kind of remote control (eg. WiFi). Hence, the configuration and schedule of irrigation programs had to be done directly on the WP4.
+<!--more-->
 
 The WP4 interface (a small OLED screen controlled with physical buttons) started to fail. There was a "sticky" button that was always pressed, preventing the interface from working properly. This problem started to occur intermittently but after a while was permanent and I could not configure the irrigation programs anymore. It was also not possible to fix the sticky button without opening the device, which was kind of designed not to be repaired (or I could not figure out a way to open the device without breaking it). 
 
 I then started to investigate this device and this was where I found out that the WP4 only served one basic purpose: to control three *switches*, the three solenoids (one for each station).
-<!--more-->
 
 ## Building my own irrigation controller
 
