@@ -107,7 +107,7 @@ Here are a some photos of the ROM board PCB assembled and some games loaded in t
 
 ## GitHub project
 
-You can find more details about this project, along with the Arduino code and KiCad schematics here: [https://github.com/bmpc/cpc6128_rom_board](https://github.com/bmpc/cpc6128_rom_board)
+You can find more details about this project, along with the Arduino code and KiCad schematics here: [https://github.com/bmpc/amstrad_cpc6128_romboard](https://github.com/bmpc/amstrad_cpc6128_romboard)
 
 ## Final thoughts
 
