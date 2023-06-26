@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Amstrad CPC 6128 ROM Board"
-description: "A ROM Board for the Amstrad CPC 6128 that is capable of loading two expansion ROMs at the same time from an SD card."
+description: "A ROM Board for the Amstrad CPC 6128 capable of loading two expansion ROMs simultaneously from an SD card."
 date: 2023-06-25 11:00:00 +0100
-image: /post_assets/5/rom_board_1.jpg
+image: /post_assets/5/rom_board_2.jpg
 tags: atmega328p amstrad cpc6128 ROM sdcard retrocomputer
 comments: true
 ---
