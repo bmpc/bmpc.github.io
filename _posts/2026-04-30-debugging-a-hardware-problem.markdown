@@ -2,12 +2,13 @@
 layout: post
 title: "I replaced everything… and it was just a broken trace"
 description: "My exterior sliding gate stopped working. This post describes the steps I took to debug and eventually fix the issue."
-date: 2026-04-25 11:00:00 +0100
+date: 2026-04-26 10:00:00 +0100
 image: /post_assets/6/board1.jpg
 tags: reverse engineering hardware issue debug  
 comments: true
 ---
 My exterior sliding gate stopped working. The gate is operated by a simple remote controller that allows me to open and close it. One day, the gate simply did not respond to the remote. I could still see the gate light flashing when I tried to open/close it, but the gate itself did not move. This immediately led me to believe that something was wrong—otherwise, the indicator light wouldn’t work either. So I knew it wasn’t related to the remote controller battery or a general power issue.
+<!--more-->
 
 When I tried to operate the gate, I could still hear the relays clicking inside the motor housing next to it. The first thing that came to mind was that the motor was dead.
 
@@ -54,16 +55,16 @@ So I replaced the **BTB16-600SL** as well.
 Again, no luck.
 
 <div style="display:flex;gap: 20px;justify-content: center;">
-  <img src="../post_assets/6/replaced.jpg" alt="Replaced components" width="30%" />
+  <img src="../post_assets/6/replaced.jpg" alt="Replaced components" width="90%" />
 </div>
 
 ## The unlikely culprit
 
 I measured voltages directly on the triac and determined that it wasn’t being activated—there was no signal reaching its gate (G). This meant the issue was likely in the logic side of the circuit.
 
-So I kept going backwards. The gate of the triac was connected to a small IC labeled **ULN2003**. This is a very common chip used to drive higher-current loads from low-power logic signals. Looking at its input pins, I traced one to GND and the other to a resistor right next to the IC. After that resistor, things became a mystery.
+So I kept going backwards. The gate of the triac was connected to a small IC labeled **MOC3020**. The **MOC3020** is an optocoupler (opto-isolator) with a triac output, and its main purpose is to control high-voltage AC devices safely using a low-voltage signal. From the optocoupler's input pins, I traced one of them to GND and the other to a resistor right next to the IC. After this resistor, it became a mystery.
 
-Naturally, this signal should come directly from the microcontroller (an **Atmega324P**). I did exhaustive continuity tests but couldn’t find where the signal was coming from. Following the trace from the resistor, I saw it going through several vias from the top to the bottom layer and back again, eventually disappearing under the 7-segment displays.
+Naturally, this signal should come from the microcontroller (an **Atmega324P**). I did exhaustive continuity tests but couldn’t find where the signal was coming from. Following the trace from the resistor, I saw it going through several vias from the top to the bottom layer and back again, eventually disappearing under the 7-segment displays.
 
 At that point, I decided to remove both displays since the board wasn’t working anyway. After a long battle with desoldering them, I finally managed to get them off the board. Underneath, I found yet another detour through the bottom layer and back to the top, where I could finally see which pin on the **Atmega324P** it connected to.
 
@@ -83,19 +84,32 @@ To my surprise, the 7-segment displays were also working.
   <img src="../post_assets/6/board4.jpg" alt="board4" width="30%" />
 </div>
 
-# Pseudo-schematic of the circuit
+## Pseudo-schematic of the circuit
 
 This is the schematic I created while reverse engineering the board:
 
 <div style="display:flex;gap: 20px;justify-content: center;">
-  <img src="../post_assets/6/circuit.svg" alt="board2" width="90%" />
+  <img style="background-color: white;" src="../post_assets/6/circuit.svg" alt="board2" width="90%" />
 </div>
+
+The live terminals are connected to the **HLS8L-DC24V** relay which decides if the gate should open or close.
+
+The neutral terminal is connected to the **BTB16-600SL** triac. The triac is controlled by the **MOC3020** which in turn is driven directly by the microcontroller. This triac and the **MOC3020** are almost redundant, but they are often used together as the **MOC3020** is only used as the trigger device. The high load is handled by the **BTB16-600SL**.  
+
+Both the live and neutral terminals are driven by the **HLS8L-DC24V** double relay. The coil in this relay is controlled by the **ULN2003** which is a very common integrated circuit used in electronics to drive high-current loads from low-power logic signals. In this case, the **ULN2003** is controlled directly by the microcontroller.
+
+So why do we have a double activation circuit specifically for the neutral terminal? This terminal is only connected to the main neutral signal if the:
+- **HLS8L-DC24V** relay is enabled and the
+- **BTB16-600SL** triac is also enabled 
+
+I did a bit of research and it seems this is mainly for security reasons. When controlling the live and neutral wires separatly, we can have a small difference in timing. This is done to reduce arcing, protect the relays and fauld handling.
+
 
 ## Final thoughts
 
-This was a difficult but very rewarding problem. It took time—especially waiting for replacement parts—and I must have assembled and disassembled the system more than ten times.
+This was a difficult problem to solve but in the end very rewarding as well. It took some time—especially waiting for replacement parts—and I must have assembled and disassembled the unit more than ten times in total.
 
-**Warning**: Working with mains voltage is dangerous. Whenever I needed to touch or probe the circuit, I always turned off the power at the breaker.
+**Warning:** Working with mains voltage is very dangerous. Whenever I had to touch the wires, even just to take measurements, I always shut down the power at the breaker box.
 
 Until next time!
 
